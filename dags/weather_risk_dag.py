@@ -18,6 +18,7 @@ from gold import build_gold
 from load_postgres import load_gold_data
 
 
+
 default_args = {
     "retries": 2,
     "retry_delay": timedelta(minutes=5),

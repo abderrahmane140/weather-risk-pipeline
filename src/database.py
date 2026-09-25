@@ -6,11 +6,11 @@ from sqlalchemy.engine import URL
 
 DATABASE_URL = URL.create(
     drivername="postgresql+psycopg2",
-    username=os.getenv("DB_USER", "myuser"),
-    password=os.getenv("DB_PASSWORD", "Password123!"),
-    host=os.getenv("DB_HOST", "localhost"),
-    port=int(os.getenv("DB_PORT", "5432")),
-    database=os.getenv("DB_NAME", "mydb"),
+    username=os.getenv("DB_USER"),
+    password=os.getenv("DB_PASSWORD"),
+    host=os.getenv("DB_HOST"),
+    port=int(os.getenv("DB_PORT")),
+    database=os.getenv("DB_NAME"),
 )
 
 
